@@ -1,0 +1,266 @@
+nav {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+}
+
+p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 37px;
+    color: #08A6E4;
+    margin-top: 17px;
+    margin-bottom: 16px;
+    margin-left: 25px;
+}
+
+.desplegable {
+    position: absolute;
+    width: 20px;
+    height: 12px;
+    right: 30px;
+    top: 29px;
+    margin-bottom: 29px;
+}
+
+.rectangulo {
+    width: 20px;
+    height: 3px;
+    margin-top: 2px;
+    background: #07ACE6;
+}
+
+.enlaces {
+    display: none;
+}
+
+.contenedor1 {
+    width: 100%;
+    margin-top: 170px;
+}
+
+.contenedor1 h1 {
+    width: 162px;
+    height: 41px;
+    left: 106.59px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+    color: #000000;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contenedor1 h2 {
+    width: 308px;
+    height: 57px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+    margin-top: 28px;
+    margin: 0 auto;
+}
+
+.button1 {
+    width: 310px;
+    height: 67px;
+    background: #08A6E4;
+    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+    border-radius: 40px;
+    color: white;
+    margin-left: 33px;
+    margin-top: 28px;
+    margin-bottom: 51px;
+}
+
+.divImg {
+    width: 100%;
+    height: fit-content;
+}
+
+.divImg img {
+    width: 100%;
+    max-height: 267px;
+    background: url(/img/Background1.png);
+}
+
+.secondTitle {
+    width: 100%;
+    height: 112px;
+    left: 36px;
+    top: 714px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.secondTitle p {
+    color: #000000;
+}
+
+.divColum1 {
+    width: 176px;
+    height: 140px;
+    left: 151px;
+    top: 851px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.divColum2 {
+    width: 176px;
+    height: 167px;
+    left: 157px;
+    top: 1016px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.divColum3 {
+    width: 176px;
+    height: 168px;
+    left: 157px;
+    top: 1208px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.circulo {
+    width: 62.71px;
+    height: 62.71px;
+    margin-left: 57px;
+    border-radius: 50%;
+}
+
+.circuloRosa {
+    background: #FB3B64;
+}
+
+.circuloAzul {
+    background: #08A6E4;
+}
+
+.circuloVerde {
+    background: #55DFB4;
+}
+
+.numero {
+    width: 117px;
+    height: 24px;
+    left: 0px;
+    top: 76.89px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 5.96px;
+    color: #000000;
+}
+
+.smalltit {
+    width: 176px;
+    height: 48px;
+    left: 0px;
+    top: 119px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A5A5A5;
+}
+
+.divGris {
+    width: 100%;
+    height: 1395.66px;
+    left: 0px;
+    top: 1426px;
+    padding-top: 46px;
+    background: #F7F7F7;
+}
+
+.divG1 {
+    width: 314px;
+    height: 370px;
+    margin-left: 30px;
+    margin-top: 42px;
+    background: #FFFFFF;
+    border: 1px solid #E8E9ED;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.divG2 {
+    width: 315px;
+    height: 370px;
+    margin-left: 30px;
+    margin-top: 46px;
+    background: #FFFFFF;
+    border: 1px solid #E8E9ED;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.divG3 {
+    width: 314px;
+    height: 298px;
+    left: 11.69px;
+    top: 0px;
+    margin-left: 30px;
+    margin-top: 46px;
+    background: #FFFFFF;
+    border: 1px solid #E8E9ED;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.divG4 {
+    width: 314px;
+    height: 195px;
+    left: 11.69px;
+    top: 291px;
+    margin-left: 30px;
+    background: #55DFB4;
+    border: 1px solid #E8E9ED;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.divG1img {
+    width: 192.76px;
+    height: 109.93px;
+    left: 55.27px;
+    top: 37.11px;
+    background: url(Macbook2.png);
+}
+
+.divG1img img {
+    left: 55.27px;
+    top: 37.11px;
+}
+
+.divG4img {
+    width: 295.73px;
+    height: 207.72px;
+    left: 0px;
+    top: 315.64px;
+    background: url(/img/Trumpet2.png);
+}
