@@ -1,3 +1,7 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 nav {
     position: absolute;
     width: 100%;
@@ -79,6 +83,7 @@ p {
     background: #08A6E4;
     box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
     border-radius: 40px;
+    border: white;
     color: white;
     margin-left: 33px;
     margin-top: 28px;
@@ -87,13 +92,10 @@ p {
 
 .divImg {
     width: 100%;
-    height: fit-content;
-}
-
-.divImg img {
-    width: 100%;
-    max-height: 267px;
-    background: url(/img/Background1.png);
+    height: 267px;
+    left: -201.5px;
+    top: 434px;
+    background: url(../assets/img/Background1.png);
 }
 
 .secondTitle {
@@ -198,6 +200,7 @@ p {
 }
 
 .divG1 {
+    position: relative;
     width: 314px;
     height: 370px;
     margin-left: 30px;
@@ -209,6 +212,7 @@ p {
 }
 
 .divG2 {
+    position: relative;
     width: 315px;
     height: 370px;
     margin-left: 30px;
@@ -245,22 +249,412 @@ p {
 }
 
 .divG1img {
+    position: absolute;
     width: 192.76px;
     height: 109.93px;
-    left: 55.27px;
-    top: 37.11px;
-    background: url(Macbook2.png);
+    margin-left: 55.27px;
+    margin-top: 37.11px;
+    background-image: url(../assets/img/Macbook22.png);
 }
 
-.divG1img img {
-    left: 55.27px;
-    top: 37.11px;
+.pnkCircle {
+    position: absolute;
+    width: 90.12px;
+    height: 90.12px;
+    margin-left: 159.78px;
+    margin-top: 16px;
+    background: #FB3B64;
+    border-radius: 41px;
+    transform: rotate(-45deg);
+}
+
+.divG1 h4 {
+    width: 198px;
+    height: 36px;
+    margin-left: 22px;
+    margin-top: 171.96px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.divG1 p {
+    width: 272px;
+    height: 84px;
+    left: 21px;
+    padding-top: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.divG2img {
+    position: absolute;
+    width: 175px;
+    height: 134.99px;
+    margin-left: 90px;
+    margin-top: 19.01px;
+    background-image: url(../assets/img/iPhone22.png);
+}
+
+.blueCircle {
+    position: absolute;
+    width: 131.88px;
+    height: 131.7px;
+    left: 90px;
+    top: 12px;
+    background: #08A6E4;
+    border-radius: 50%;
+}
+
+.divG2 h4 {
+    width: 198px;
+    height: 36px;
+    margin-left: 22px;
+    margin-top: 176.96px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.divG2 p {
+    width: 272px;
+    height: 84px;
+    left: 21px;
+    padding-top: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.divG3 h4 {
+    width: 274px;
+    height: 90px;
+    margin-left: 20px;
+    margin-top: 31px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.divG3 p {
+    width: 274px;
+    height: 114px;
+    margin-left: 20px;
+    margin-bottom: 23.67px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
 }
 
 .divG4img {
     width: 295.73px;
     height: 207.72px;
-    left: 0px;
-    top: 315.64px;
-    background: url(/img/Trumpet2.png);
+    margin-right: 29.69px;
+    margin-top: 24.64px;
+    background: url(../assets/img/Trumpet2.png);
+}
+
+.divPricings {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
+.pricings {
+    width: 114px;
+    height: 42px;
+    top: 2875px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+
+.divPricingsTwo {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    padding-bottom: 276px;
+    margin-bottom: 76px;
+}
+
+.rectanglePricings {
+    position: absolute;
+    width: 293px;
+    height: 278px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 18px;
+    margin: 0 auto;
+    margin-left: 41px;
+}
+
+.pinkrectangle {
+    border: 1px solid #FB3B64;
+}
+
+.bluerectangle {
+    border: 1px solid #07ACE6;
+}
+
+.greenrectangle {
+    border: 1px solid #55DFB4;
+}
+
+.buttonPricings {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    color: white;
+    border-radius: 23px;
+    border-color: transparent;
+    margin-left: 112.5px;
+    margin-top: 252px;
+}
+
+.pinkbutton {
+    background: #EB476E;
+}
+
+.bluebutton {
+    background: #07ACE6;
+}
+
+.greenbutton {
+    background: #55DFB4;
+}
+
+.pricingContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    width: 40%;
+    height: 100%;
+}
+
+.features {
+    width: 60%;
+    height: 100%;
+}
+
+.featuresContent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price h5 {
+    width: 59px;
+    height: 64px;
+    margin-left: 45px;
+    margin-top: -43px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 64px;
+    color: #FB3B64;
+}
+
+.price h6 {
+    width: 52px;
+    height: 24px;
+    margin-left: 50px;
+    margin-top: 70px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #13253B;
+}
+
+.featuresContent p {
+    width: 84px;
+    height: 19px;
+    margin-left: 4px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    white-space: nowrap;
+    margin-left: 15px;
+}
+
+.greenSquare {
+    position: relative;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #55DFB4;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.greenCheck {
+    position: absolute;
+    color: #55DFB4;
+    margin-top: -8px;
+}
+
+.redSquare {
+    position: relative;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #EB476E;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-left: -4px;
+    margin-right: -3px;
+}
+
+.redCross {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: calc(50% - 11px/2);
+    top: calc(50% - 11px/2);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 10px;
+    text-align: center;
+    color: #EB476E;
+}
+
+.price p {
+    width: 74px;
+    height: 14px;
+    margin-left: 36px;
+    margin-top: -71px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #13253B;
+}
+
+.priceBlue {
+    color: #07ACE6 !important;
+    margin-left: 31px !important;
+}
+
+.blueType {
+    margin-left: 20px !important;
+}
+
+.priceGreen {
+    color: #55DFB4 !important;
+    margin-left: 31px !important;
+}
+
+.greenType {
+    margin-left: 30px !important;
+}
+
+.formQuest {
+    width: 100%;
+    height: auto;
+}
+
+.formQuest h2 {
+    width: 280px;
+    height: 47px;
+    margin-left: 30px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+}
+
+.formQuest h5 {
+    width: 312px;
+    height: 22px;
+    margin-left: 30px;
+    margin-top: -28px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.infoCont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.vector1 {
+    margin-left: 7.41%;
+    margin-top: 1.81%;
+    margin-right: 7px;
+}
+
+.vector2 {
+    margin-left: 7.41%;
+    margin-top: 1.11%;
+    margin-right: 7px;
+}
+
+.email {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #A5A5A5;
+}
+
+.telefono {
+    top: 2px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #A5A5A5;
 }
