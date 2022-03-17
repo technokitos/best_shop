@@ -24,7 +24,7 @@ p {
     margin-left: 25px;
 }
 
-.desplegable {
+.botonDesplegable {
     position: absolute;
     width: 20px;
     height: 12px;
@@ -44,6 +44,45 @@ p {
     display: none;
 }
 
+.enlaces a:hover {
+    color: #000000;
+}
+
+:checked~.enlaces {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 175.65px;
+    left: 0px;
+    top: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+}
+
+div.enlaces[type=checkbox] {
+    position: absolute;
+}
+
+.enlaces li {
+    list-style: none;
+}
+
+.textoEnlaces {
+    width: 72px;
+    height: 15px;
+    margin-top: 127px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 3.28px;
+    text-transform: uppercase;
+    color: #A5A5A5;
+    text-decoration: none;
+}
+
 .contenedor1 {
     width: 100%;
     margin-top: 170px;
@@ -52,7 +91,6 @@ p {
 .contenedor1 h1 {
     width: 162px;
     height: 41px;
-    left: 106.59px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -61,6 +99,8 @@ p {
     color: #000000;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 20px;
+    white-space: nowrap;
 }
 
 .contenedor1 h2 {
@@ -85,8 +125,8 @@ p {
     border-radius: 40px;
     border: white;
     color: white;
-    margin-left: 33px;
     margin-top: 28px;
+    margin-left: 33px;
     margin-bottom: 51px;
 }
 
@@ -95,7 +135,7 @@ p {
     height: 267px;
     left: -201.5px;
     top: 434px;
-    background: url(../assets/img/Background1.png);
+    background: url(../assets/img/Background1.png) no-repeat;
 }
 
 .secondTitle {
@@ -112,6 +152,16 @@ p {
 }
 
 .secondTitle p {
+    width: 303px;
+    height: 112px;
+    left: 36px;
+    top: 714px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
     color: #000000;
 }
 
@@ -123,6 +173,7 @@ p {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 25px;
 }
 
 .divColum2 {
@@ -132,6 +183,7 @@ p {
     top: 1016px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .divColum3 {
@@ -141,6 +193,7 @@ p {
     top: 1208px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .circulo {
@@ -148,18 +201,93 @@ p {
     height: 62.71px;
     margin-left: 57px;
     border-radius: 50%;
+    position: relative;
 }
 
 .circuloRosa {
     background: #FB3B64;
 }
 
+.vecH {
+    position: absolute;
+    left: 25%;
+    right: -41%;
+    top: 4%;
+}
+
+.vecB {
+    position: absolute;
+    right: -17.03%;
+    top: 48.87%;
+    bottom: 0%;
+}
+
 .circuloAzul {
     background: #08A6E4;
 }
 
+.vec9 {
+    position: absolute;
+    left: 30.39%;
+    top: 21.79%
+}
+
+.vec10 {
+    position: absolute;
+    left: 61.9%;
+    top: 28.74%;
+}
+
+.vec11 {
+    position: absolute;
+    left: 73.55%;
+    top: 37.38%;
+}
+
 .circuloVerde {
     background: #55DFB4;
+}
+
+.lineas {
+    width: auto;
+    height: auto;
+    margin-left: 15px;
+}
+
+.vec12 {
+    position: absolute;
+    Width: 37px;
+    Height: 3px;
+    Left: 40px;
+    Top: 2px;
+    background: #000000;
+}
+
+.vec13 {
+    position: absolute;
+    Width: 43.15px;
+    Height: 3px;
+    Top: 6px;
+    Left: 36px;
+    background: #000000;
+}
+
+.vec14 {
+    position: absolute;
+    Width: 48.17px;
+    Height: 3px;
+    Top: 10px;
+    Left: 33px;
+    background: #000000;
+}
+
+.vec15 {
+    position: absolute;
+    width: 47px;
+    height: 34px;
+    left: 48%;
+    top: 23%;
+    border: solid 3px #000000;
 }
 
 .numero {
@@ -169,7 +297,7 @@ p {
     top: 76.89px;
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 800;
+    font-weight: 1000;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -178,7 +306,7 @@ p {
 }
 
 .smalltit {
-    width: 176px;
+    width: 130px;
     height: 48px;
     left: 0px;
     top: 119px;
@@ -192,8 +320,7 @@ p {
 
 .divGris {
     width: 100%;
-    height: 1395.66px;
-    left: 0px;
+    height: 1470px;
     top: 1426px;
     padding-top: 46px;
     background: #F7F7F7;
@@ -214,7 +341,7 @@ p {
 .divG2 {
     position: relative;
     width: 315px;
-    height: 370px;
+    height: 420px;
     margin-left: 30px;
     margin-top: 46px;
     background: #FFFFFF;
@@ -239,8 +366,7 @@ p {
 .divG4 {
     width: 314px;
     height: 195px;
-    left: 11.69px;
-    top: 291px;
+    margin-bottom: 30px;
     margin-left: 30px;
     background: #55DFB4;
     border: 1px solid #E8E9ED;
@@ -330,7 +456,7 @@ p {
     width: 272px;
     height: 84px;
     left: 21px;
-    padding-top: 10px;
+    padding-top: 52px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -626,6 +752,8 @@ p {
     display: flex;
     align-items: center;
     margin: 0 auto;
+    margin-bottom: 52px;
+    padding-top: 12px;
 }
 
 .vector1 {
@@ -636,7 +764,7 @@ p {
 
 .vector2 {
     margin-left: 7.41%;
-    margin-top: 1.11%;
+    margin-top: -20.89%;
     margin-right: 7px;
 }
 
@@ -650,11 +778,156 @@ p {
 }
 
 .telefono {
-    top: 2px;
+    margin-top: -82px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #A5A5A5;
+}
+
+.profileData {
+    width: 100%;
+    height: 157px;
+}
+
+.profileData label {
+    width: 43px;
+    height: 15px;
+    margin-left: 30px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3.28px;
+    color: #08A6E4;
+}
+
+.profileData input {
+    width: 312px;
+    max-height: 0px;
+    margin-left: 30px;
+    margin-top: 41.98px;
+    border: 0.5px solid #95989A;
+}
+
+.terms {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+.terms input {
+    width: 24px;
+    height: 24px;
+    margin-left: 26px;
+    margin-top: 35px;
+    background-color: #FFFFFF;
+    color: #08A6E4
+}
+
+.terms p {
+    width: 277px;
+    height: 144px;
+    margin-left: 10px;
+    margin-top: 35px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #707070;
+}
+
+.botonFinal {
+    width: 226px;
+    height: 57px;
+    margin-left: 116px;
+    margin-top: 33px;
+    margin-bottom: 44px;
+    background: #08A6E4;
+    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+    border-radius: 35px;
+    color: #FFFFFF;
+    border-color: transparent;
+}
+
+.divFooter {
+    width: 100%;
+    height: 89px;
+    background: #F7F7F7;
+    box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.divTextFooter {
+    width: 70%;
+    height: auto;
+}
+
+.divTextFooter h5 {
+    width: 168px;
+    height: 0px;
+    margin-left: 17px;
+    margin-top: 22.48px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 30px;
+    color: #08A6E4;
+    white-space: nowrap;
+}
+
+.divTextFooter p {
+    width: 187px;
+    height: 15px;
+    margin-left: 17px;
+    margin-top: -13.48px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    color: #A5A5A5;
+}
+
+.divVectorFooter {
+    width: 30%;
+    height: auto;
+    display: flex;
+}
+
+.vectorTweet {
+    position: relative;
+}
+
+.tBgLogo {
+    position: absolute;
+    margin-top: 33px;
+}
+
+.tLogo {
+    position: absolute;
+    margin-top: 39px;
+    margin-left: 4px;
+}
+
+.vectorFace {
+    position: relative;
+}
+
+.fBgLogo {
+    position: absolute;
+    margin-top: 33px;
+    margin-left: 40px;
+}
+
+.fLogo {
+    position: absolute;
+    margin-top: 37px;
+    margin-left: 48px;
 }
