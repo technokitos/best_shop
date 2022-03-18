@@ -86,15 +86,14 @@ div.enlaces[type=checkbox] {
 .contenedor1 {
     width: 100%;
     margin-top: 170px;
+    text-align: center;
 }
 
 .contenedor1 h1 {
-    width: 162px;
-    height: 41px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 2em;
     line-height: 41px;
     color: #000000;
     text-align: center;
@@ -104,12 +103,10 @@ div.enlaces[type=checkbox] {
 }
 
 .contenedor1 h2 {
-    width: 308px;
-    height: 57px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 0.75em;
     line-height: 23px;
     text-align: center;
     color: #000000;
@@ -121,13 +118,10 @@ div.enlaces[type=checkbox] {
     width: 310px;
     height: 67px;
     background: #08A6E4;
-    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+    box-shadow: 5px 10px 14px rgb(7 172 230 / 29%);
     border-radius: 40px;
     border: white;
     color: white;
-    margin-top: 28px;
-    margin-left: 33px;
-    margin-bottom: 51px;
 }
 
 .divImg {
@@ -320,58 +314,33 @@ div.enlaces[type=checkbox] {
 
 .divGris {
     width: 100%;
-    height: 1470px;
-    top: 1426px;
+    height: auto;
     padding-top: 46px;
     background: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.divG1 {
+@media (max-width:798px) {
+    .divGris {
+        display: inherit !important;
+    }
+}
+
+.divG {
+    background: #FFFFFF;
+    border: 1px solid #E8E9ED;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    margin: 2%;
+    padding: 2%;
+}
+
+.divG img {
     position: relative;
-    width: 314px;
-    height: 370px;
-    margin-left: 30px;
-    margin-top: 42px;
-    background: #FFFFFF;
-    border: 1px solid #E8E9ED;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-
-.divG2 {
-    position: relative;
-    width: 315px;
-    height: 420px;
-    margin-left: 30px;
-    margin-top: 46px;
-    background: #FFFFFF;
-    border: 1px solid #E8E9ED;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-
-.divG3 {
-    width: 314px;
-    height: 298px;
-    left: 11.69px;
-    top: 0px;
-    margin-left: 30px;
-    margin-top: 46px;
-    background: #FFFFFF;
-    border: 1px solid #E8E9ED;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-
-.divG4 {
-    width: 314px;
-    height: 195px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    background: #55DFB4;
-    border: 1px solid #E8E9ED;
-    box-sizing: border-box;
-    border-radius: 5px;
+    margin-top: -80px;
 }
 
 .divG1img {
@@ -383,41 +352,28 @@ div.enlaces[type=checkbox] {
     background-image: url(../assets/img/Macbook22.png);
 }
 
+.contenedor {
+    padding: 0.01em 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 .pnkCircle {
-    position: absolute;
     width: 90.12px;
     height: 90.12px;
-    margin-left: 159.78px;
     margin-top: 16px;
     background: #FB3B64;
-    border-radius: 41px;
+    border-radius: 20px;
     transform: rotate(-45deg);
-}
-
-.divG1 h4 {
-    width: 198px;
-    height: 36px;
-    margin-left: 22px;
-    margin-top: 171.96px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 35px;
-    color: #000000;
-}
-
-.divG1 p {
-    width: 272px;
-    height: 84px;
-    left: 21px;
-    padding-top: 10px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #000000;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 0;
 }
 
 .divG2img {
@@ -430,7 +386,7 @@ div.enlaces[type=checkbox] {
 }
 
 .blueCircle {
-    position: absolute;
+    position: relative;
     width: 131.88px;
     height: 131.7px;
     left: 90px;
@@ -439,33 +395,7 @@ div.enlaces[type=checkbox] {
     border-radius: 50%;
 }
 
-.divG2 h4 {
-    width: 198px;
-    height: 36px;
-    margin-left: 22px;
-    margin-top: 176.96px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 35px;
-    color: #000000;
-}
-
-.divG2 p {
-    width: 272px;
-    height: 84px;
-    left: 21px;
-    padding-top: 52px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #000000;
-}
-
-.divG3 h4 {
+.divG h4 {
     width: 274px;
     height: 90px;
     margin-left: 20px;
@@ -478,7 +408,7 @@ div.enlaces[type=checkbox] {
     color: #000000;
 }
 
-.divG3 p {
+.divG p {
     width: 274px;
     height: 114px;
     margin-left: 20px;
@@ -497,6 +427,7 @@ div.enlaces[type=checkbox] {
     margin-right: 29.69px;
     margin-top: 24.64px;
     background: url(../assets/img/Trumpet2.png);
+    background-color: #55DFB4;
 }
 
 .divPricings {
