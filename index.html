@@ -11,7 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/5da67df358.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/v4-shims.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/fontawesome.js">
+    </script>
 </head>
 
 <body>
@@ -24,6 +28,10 @@
         <div class="progress-bar">
             <div id="progreso"></div>
         </div>
+        <div id="returnTop" class=" btn-scrollTop">
+            <i class="fa-solid fa-caret-up"></i>
+        </div>
+
         <div class="container">
 
             <p>OXYGEN Shop</p>
@@ -355,24 +363,24 @@
         </div>
 
         <div class="anchoGrande2">
-            <form>
+            <form mathod="POST" id="formulario" onsubmit="validacion()">
                 <div class="profileData">
                     <div class="divnombre">
                         <label for="name">NAME</label>
-                        <input type="text">
+                        <input id="nombre" type="text">
                     </div>
                     <div class="divemail">
                         <label for="email">EMAIL</label>
-                        <input type="email">
+                        <input id="correo" type="email">
                     </div>
                 </div>
-
                 <div class="terms">
-                    <input class="termsInput" type="checkbox" checked="checked">
+                    <input id="checkbox" class="termsInput" type="checkbox" checked="checked">
                     <p>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural
                         Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
                 </div>
-                <button class="botonFinal" type="submit">Send</button>
+
+                <button id="enviar" class="botonFinal" type="submit">Send</button>
             </form>
         </div>
     </div>
