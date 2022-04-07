@@ -18,6 +18,31 @@ body {
     background-color: #08A6E4;
 }
 
+.btn-scrollTop {
+    position: fixed;
+    z-index: 2;
+    right: 10px;
+    bottom: 70px;
+    background-color: #08A6E4;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+    transform: translateY(200px);
+}
+
+.btn-scrollTop:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #034f6d;
+}
+
+.btn-scrollTop-on {
+    transform: translateY(0);
+}
+
 .container {
     display: flex;
     flex-flow: row wrap;
@@ -89,15 +114,6 @@ nav p {
     background: #07ACE6;
 }
 
-.enlaces {
-    display: none;
-}
-
-.enlaces a:hover {
-    color: #000000;
-    font-weight: bold;
-}
-
 div#content {
     padding: 10px;
     background-color: #fff;
@@ -105,10 +121,6 @@ div#content {
     cursor: pointer;
     margin: -10px 0px 0px -10px;
     display: block;
-}
-
-.enlaces li {
-    list-style: none;
 }
 
 .textoEnlaces {
@@ -164,6 +176,7 @@ div#content {
 .button1:hover {
     background: #034f6d;
     box-shadow: 0px 0px 0px rgb(7 172 230 / 29%) !important;
+    cursor: pointer;
 }
 
 .divImg {
@@ -783,10 +796,15 @@ div#content {
 
 .profileData input {
     width: 312px;
-    max-height: 0px;
+    height: 15px;
     margin-left: 30px;
     margin-top: 41.98px;
-    border: 0.5px solid #95989A;
+    border: #E8E9ED;
+    border-bottom: 0.5px solid #95989A;
+}
+
+.wrongInputs {
+    border: solid 2px red;
 }
 
 .terms {
