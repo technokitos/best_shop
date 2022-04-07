@@ -51,12 +51,6 @@
 
     }
 
-    window.onload = iniciar;
-
-    function iniciar() {
-        document.getElementById('enviar').addEventListener('click', validacion, false);
-    }
-
     function validarNombre() {
         const nombre = document.getElementById('nombre');
         const nombreVal = document.getElementById('nombre').value;
@@ -101,32 +95,28 @@
         return true;
     }
 
-    function validacion(e) {
+    function validacion() {
         if (validarNombre() && validarCorreo() && validarCheckBox()) {
+            console.log('llega?');
+            const getName = document.querySelector('#nombre').value;
+            const getCorreo = document.querySelector('#correo').value;
+
+            fetch('https://jsonplaceholder.typicode.com/posts', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        nombre: getName,
+                        email: getCorreo,
+                    }),
+                    headers: {
+                        'Content-type': 'application/json; charset=UTF-8',
+                    },
+                })
+                .then((response) => response.json())
+                .then((json) => console.log(json));
+            console.log('no la hemos cagado');
             return true;
         } else {
-            e.preventDefault();
+            alert('la hemos cagado');
             return false;
         }
     }
-
-    const myForm = document.getElementById('formulario');
-
-    myForm.addEventListener('submit', function(e) {
-
-        e.preventDefault();
-
-        const formData = new FormData(this);
-
-        fetch('https://jsonplaceholder.typicode.com/posts', {
-            method: 'POST',
-            body: formData,
-        }).then(function(response) {
-            return response.text();
-        }).then(function(text) {
-            console.log(text);
-        }).catch(function(error) {
-            console.log(error);
-        })
-
-    });

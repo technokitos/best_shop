@@ -363,25 +363,25 @@
         </div>
 
         <div class="anchoGrande2">
-            <form mathod="POST" id="formulario" onsubmit="validacion()">
-                <div class="profileData">
-                    <div class="divnombre">
-                        <label for="name">NAME</label>
-                        <input id="nombre" type="text">
-                    </div>
-                    <div class="divemail">
-                        <label for="email">EMAIL</label>
-                        <input id="correo" type="email">
-                    </div>
+            <!-- <form method="POST" id="formulario">-->
+            <div class="profileData">
+                <div class="divnombre">
+                    <label for="name">NAME</label>
+                    <input id="nombre" type="text">
                 </div>
-                <div class="terms">
-                    <input id="checkbox" class="termsInput" type="checkbox" checked="checked">
-                    <p>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural
-                        Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+                <div class="divemail">
+                    <label for="email">EMAIL</label>
+                    <input id="correo" type="email">
                 </div>
+            </div>
+            <div class="terms">
+                <input id="checkbox" class="termsInput" type="checkbox" checked="checked">
+                <p>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural
+                    Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+            </div>
 
-                <button id="enviar" class="botonFinal" type="submit">Send</button>
-            </form>
+            <button onclick="validacion()" id="enviar" class="botonFinal">Send</button>
+            <!--</form> -->
         </div>
     </div>
 
