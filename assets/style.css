@@ -43,6 +43,76 @@ body {
     transform: translateY(0);
 }
 
+.contenedor-modal {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.myModal {
+    background: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 15%;
+    border: 2px solid #707070;
+    box-shadow: 0 0 0 0.1px;
+    position: relative;
+}
+
+.myModal h3 {
+    text-align: center;
+}
+
+.myModal p {
+    text-align: center;
+}
+
+.cerrarModal {
+    position: absolute;
+    right: 15px;
+    color: #08A6E4;
+    background-color: white;
+    border: white;
+    font-size: 1.5em;
+}
+
+.claseLabel {
+    width: 43px;
+    height: 15px;
+    margin-left: 30px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3.28px;
+    color: #08A6E4;
+}
+
+.myModal input {
+    width: 312px;
+    height: 15px;
+    margin-left: 30px;
+    margin-top: 41.98px;
+    border: #E8E9ED;
+    border-bottom: 0.5px solid #95989A;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
 .container {
     display: flex;
     flex-flow: row wrap;
@@ -781,19 +851,6 @@ div#content {
     height: 157px;
 }
 
-.profileData label {
-    width: 43px;
-    height: 15px;
-    margin-left: 30px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 15px;
-    letter-spacing: 3.28px;
-    color: #08A6E4;
-}
-
 .profileData input {
     width: 312px;
     height: 15px;
@@ -803,8 +860,12 @@ div#content {
     border-bottom: 0.5px solid #95989A;
 }
 
-.wrongInputs {
-    border: solid 2px red;
+input[type=email].wrongInputs {
+    border: 2px solid red;
+}
+
+input[type=email].rigthInputs {
+    border: 2px solid #08A6E4;
 }
 
 .terms {
@@ -940,7 +1001,7 @@ div#content {
         transform: translate3d(0, 0, 0);
         -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
         transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-        z-index: 1002;
+        z-index: 4;
         cursor: pointer;
         -webkit-user-select: none;
         -moz-user-select: none;

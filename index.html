@@ -19,9 +19,17 @@
 </head>
 
 <body>
+    <div class="contenedor-modal" id="contenedor_modal">
 
-    <div id="myModal">
+        <div class="myModal">
+            <button class="cerrarModal" onclick="closePopUp()">x</button>
+            <h3 class="titulo_modal">Subscribe to our Newsletter</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus illo non commodi rerum, ducimus laboriosam corrupti incidunt dolor temporibus libero fugiat explicabo</p>
+            <label for="email" class="claseLabel">EMAIL</label>
+            <input id="correo2" type="email">
+            <button onclick="validacion2()" class="botonFinal">Send</button>
 
+        </div>
     </div>
 
     <nav id="navegador">
@@ -29,8 +37,7 @@
             <div id="progreso"></div>
         </div>
         <div id="returnTop" class=" btn-scrollTop">
-            <i class="fa-solid fa-caret-up"></i>
-        </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256c141.4 0 256-114.6 256-256S397.4 0 256 0zM382.8 246.1C380.3 252.1 374.5 256 368 256h-64v96c0 17.67-14.33 32-32 32h-32c-17.67 0-32-14.33-32-32V256h-64C137.5 256 131.7 252.1 129.2 246.1C126.7 240.1 128.1 233.3 132.7 228.7l112-112c6.248-6.248 16.38-6.248 22.62 0l112 112C383.9 233.3 385.3 240.1 382.8 246.1z"/></svg>            </div>
 
         <div class="container">
 
@@ -191,6 +198,11 @@
 
     </div>
     <h2 class="pricings" id="prices">Pricings</h2>
+    <select name="" id="currencyChange">
+        <option selected value="usd">$.-USD</option>
+        <option value="eur">€.-EUR</option>
+        <option value="gbp">£.-GBP</option>
+    </select>
     <div class="divPricings">
         <div class="divPricingsTwo">
             <div class="rectanglePricings pinkrectangle">
@@ -198,6 +210,8 @@
                     <div class="price">
                         <h6>Basic</h6>
                         <h5>$0</h5>
+                        <h5>0€</h5>
+                        <h5>£0</h5>
                     </div>
                     <div class="features featuresPink">
                         <div class="featuresContent">
@@ -243,7 +257,7 @@
                 <div class="pricingContent">
                     <div class="price">
                         <h6 class="blueType">Professional</h6>
-                        <h5 class="priceBlue">$25</h5>
+                        <h5 id="priceB" class="priceBlue">$25</h5>
                         <p>Limited offer</p>
                     </div>
                     <div class="features">
@@ -289,7 +303,7 @@
                 <div class="pricingContent">
                     <div class="price">
                         <h6 class="greenType">Premium</h6>
-                        <h5 class="priceGreen">$60</h5>
+                        <h5 id="priceG" class="priceGreen">$60</h5>
                         <p>Limited offer</p>
                     </div>
                     <div class="features">
@@ -366,11 +380,11 @@
             <!-- <form method="POST" id="formulario">-->
             <div class="profileData">
                 <div class="divnombre">
-                    <label for="name">NAME</label>
+                    <label for="name" class="claseLabel">NAME</label>
                     <input id="nombre" type="text">
                 </div>
                 <div class="divemail">
-                    <label for="email">EMAIL</label>
+                    <label for="email" class="claseLabel">EMAIL</label>
                     <input id="correo" type="email">
                 </div>
             </div>
@@ -380,7 +394,7 @@
                     Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
             </div>
 
-            <button onclick="validacion()" id="enviar" class="botonFinal">Send</button>
+            <button onclick="validacion()" class="botonFinal">Send</button>
             <!--</form> -->
         </div>
     </div>
