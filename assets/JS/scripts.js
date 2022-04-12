@@ -63,12 +63,15 @@
         })
     })
 
+    // Eventos que se realizan cuando la ventana esta en scroll
     window.onscroll = () => {
 
         add_btn_scrolltop();
         percent();
         update();
     }
+
+    // Calcula el porcentaje de scroll
     const percent = () => {
         const porcentaje = ((window.scrollY) / (document.body.scrollHeight - window.innerHeight) * 100);
         if (porcentaje > 25) {
@@ -76,6 +79,7 @@
         }
     }
 
+    //añade o quita el boton cuando sobrepasa cierta altura
     const add_btn_scrolltop = () => {
         if (window.scrollY < 300) {
             botonArriba.classList.remove('btn-scrollTop-on');
@@ -84,7 +88,7 @@
         }
     }
 
-
+    // Funcion para obtener el pop up almacenado en local storage
     function obtener_localStorage() {
 
         let siEsTrue = JSON.parse(localStorage.getItem("popUp"));
@@ -99,9 +103,11 @@
         localStorage.setItem("popUp", JSON.stringify(true));
     }
 
-    //guardar_localStorage();
+
     obtener_localStorage();
 
+
+    // Validacion de campos de envío de datos
 
     function validarNombre() {
         const nombre = document.getElementById('nombre');
@@ -109,14 +115,14 @@
 
         if (nombreVal === "") {
             alert("El campo nombre está vacío");
-            nombre.style.borderColor = 'red';
+            nombre.classList.add('wrongInputs');
             return false;
         } else if (nombreVal.length < 3 || nombreVal.length > 100) {
             alert("Escribe un nombre entre 3 y 100 caracteres");
-            nombre.style.borderColor = 'red';
+            nombre.classList.add('wrongInputs') = 'red';
             return false;
         } else {
-            nombre.style.borderColor = '#08A6E4';
+            nombre.classList.add('rigthInputs');
             return true;
         }
     }
@@ -124,7 +130,7 @@
     function validarCorreo() {
         const correo = document.getElementById('correo');
         const correoVal = document.getElementById('correo').value;
-        const regexCorreo = /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/
+        const regexCorreo = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
         if (correoVal === "") {
             alert("El campo correo está vacío");
@@ -142,10 +148,12 @@
         }
     }
 
+    //correo del Modal
+
     function validarCorreo2() {
         const correo2 = document.getElementById('correo2');
         const correoVal2 = document.getElementById('correo2').value;
-        const regexCorreo2 = /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/
+        const regexCorreo2 = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
         if (correoVal2 === "") {
             correo2.classList.add('wrongInputs');
@@ -169,6 +177,8 @@
         }
         return true;
     }
+
+    //Validación contacto
 
     function validacion() {
         if (validarNombre() && validarCorreo() && validarCheckBox()) {
@@ -196,6 +206,8 @@
         }
     }
 
+    // Validacion Modal
+
     function validacion2() {
         if (validarCorreo2()) {
 
@@ -221,29 +233,79 @@
         }
     }
 
+    // Funcion para obtener el cambio de moeda mediante API
+    let currChange = {};
+
     function getCurrency() {
 
         fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json')
             .then((response) => response.json())
-            .then((json) => console.log(json));
+            .then((json) => {
+                currChange = json.usd;
+            });
+
 
     }
+    getCurrency();
 
     const selectCurrencyVal = document.querySelector('#currencyChange');
 
     selectCurrencyVal.onchange = function() {
-        selectCurrencyVal.value;
+
+            console.log(selectCurrencyVal.value);
+            if (selectCurrencyVal.value === 'usd') {
+                const priceBasicE = document.getElementById('priceR');
+                priceBasicE.innerHTML = "$" + 0;
+                const priceMediumE = document.getElementById('priceB');
+                priceMediumE.innerHTML = "$" + 25;
+                const pricePremiumE = document.getElementById('priceG');
+                pricePremiumE.innerHTML = "$" + 60;
+            }
+
+            if (selectCurrencyVal.value === 'eur') {
+                const priceBasicE = document.getElementById('priceR');
+                priceBasicE.innerHTML = 0 + "€";
+                const priceMediumE = document.getElementById('priceB');
+                priceMediumE.innerHTML = Math.round(currChange.eur * 25) + "€";
+                const pricePremiumE = document.getElementById('priceG');
+                pricePremiumE.innerHTML = Math.round(currChange.eur * 60) + "€";
+            }
+
+            if (selectCurrencyVal.value === 'gbp') {
+                const priceBasicL = document.getElementById('priceR');
+                priceBasicL.innerHTML = '£' + 0;
+                const priceMediumL = document.getElementById('priceB');
+                priceMediumL.innerHTML = '£' + Math.round(currChange.gbp * 25);
+                const pricePremiumL = document.getElementById('priceG');
+                pricePremiumL.innerHTML = '£' + Math.round(currChange.gbp * 60);
+            }
+
+        }
+        // Comienzo de Slider
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
     }
 
-    getCurrency();
-
-    const currChange = {
-        "gbp": 0.76776,
-        "eur": 0.91865
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
     }
 
-    if (selectCurrencyVal.value === '') {
-
-        const priceMedium = document.getElementById('#priceB').innerHTML();
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
     }
-    const pricePremium = document.getElementById('#priceG').innerHTML();
