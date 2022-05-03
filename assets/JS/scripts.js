@@ -30,11 +30,19 @@
     function closePopUp() {
         my_popup.classList.remove('show');
         guardar_localStorage();
+
     }
 
     window.addEventListener("keyup", function(event) {
 
         if (event.key === 'Escape') {
+            closePopUp();
+        }
+    }, false);
+
+    my_popup.addEventListener("click", function(event) {
+
+        if (event.target == my_popup) {
             closePopUp();
         }
     }, false);
@@ -71,7 +79,7 @@
         update();
     }
 
-    // Calcula el porcentaje de scroll
+    // Calcula el porcentaje de scroll y muestra pop up
     const percent = () => {
         const porcentaje = ((window.scrollY) / (document.body.scrollHeight - window.innerHeight) * 100);
         if (porcentaje > 25) {
@@ -252,7 +260,7 @@
 
     selectCurrencyVal.onchange = function() {
 
-            console.log(selectCurrencyVal.value);
+
             if (selectCurrencyVal.value === 'usd') {
                 const priceBasicE = document.getElementById('priceR');
                 priceBasicE.innerHTML = "$" + 0;

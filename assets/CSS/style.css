@@ -2,7 +2,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
     margin: 0;
-    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .progress-bar {
@@ -544,8 +546,13 @@ div#content {
     margin-left: 2rem;
     background-color: #55DFB4;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
     align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+#currencyChange {
+    max-width: 75px;
 }
 
 .divPricings {
@@ -804,11 +811,6 @@ div#content {
     margin: auto;
 }
 
-.divDots {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
 
 /* Next & previous buttons */
 
@@ -880,6 +882,10 @@ div#content {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+}
+
+.divDots {
+    text-align: center;
 }
 
 .active,
@@ -1208,12 +1214,8 @@ input.rigthInputs {
         align-items: center;
     }
     .divGris {
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .textoEnlaces {
-        width: 100%;
     }
     .mostrar-pc1 {
         display: none;
@@ -1282,9 +1284,6 @@ input.rigthInputs {
         justify-content: center;
         align-items: center;
     }
-    .divColum1 {
-        margin-top: -24px;
-    }
     .botonFinal {
         height: 43px;
         margin-top: 8px;
@@ -1301,10 +1300,18 @@ input.rigthInputs {
     }
 }
 
+@media (max-width:550px) {
+    .btn-scrollTop {
+        display: none;
+    }
+    .button1 {
+        width: 50%;
+    }
+}
+
 @media(max-width:970px) {
     .linea {
         border: white;
-        display: none
     }
     .divDots {
         margin-bottom: 70px;
@@ -1313,7 +1320,8 @@ input.rigthInputs {
         display: block;
     }
     .divPricings {
-        display: inherit;
+        display: flex;
+        flex-direction: column;
     }
     .dataDiv {
         display: grid;
@@ -1329,9 +1337,9 @@ input.rigthInputs {
         margin-top: -24px;
     }
     .formQuest {
-        display: grid;
+        display: flex;
         justify-content: center;
-        align-items: center;
+        flex-direction: column;
     }
     .contenedor22 {
         display: flex;
@@ -1391,5 +1399,11 @@ input.rigthInputs {
         justify-content: flex-start;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media(max-width: 350px) {
+    nav {
+        width: 100%;
     }
 }
