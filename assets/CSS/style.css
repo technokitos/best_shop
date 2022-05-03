@@ -1,10 +1,12 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
     margin: 0;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+   
 }
 
 .progress-bar {
@@ -855,7 +857,7 @@ div#content {
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
-    width: 100%;
+    width: 94%;
     text-align: center;
 }
 
@@ -1246,6 +1248,7 @@ input.rigthInputs {
     nav {
         height: auto;
     }
+    
 }
 
 @media (min-width:980px) {
@@ -1352,6 +1355,7 @@ input.rigthInputs {
     }
     .anchoGrande1 {
         margin-top: -70px;
+        width: 100%;
     }
     .divG4img {
         height: 207.72px;
@@ -1399,6 +1403,9 @@ input.rigthInputs {
         justify-content: flex-start;
         flex-direction: column;
         align-items: center;
+    }
+    .secondTitle {
+        margin-left: 0px;
     }
 }
 
