@@ -943,12 +943,13 @@ div#content {
     font-size: 40px;
     line-height: 47px;
     color: #000000;
+    margin-bottom: 65px;
+
 }
 
 .formQuest h5 {
     width: 312px;
     height: 22px;
-    margin-left: 30px;
     margin-top: -28px;
     font-family: 'Open Sans';
     font-style: normal;
@@ -1112,7 +1113,7 @@ input.rigthInputs {
 }
 
 .divVectorFooter {
-    width: 30%;
+    width: 45%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -1333,7 +1334,7 @@ input.rigthInputs {
         margin-left: 2rem;
     }
     .divG {
-        width: 25rem;
+        width: 100%;
         height: auto;
     }
     .divColum1 {
