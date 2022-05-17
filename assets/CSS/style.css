@@ -554,7 +554,16 @@ div#content {
 }
 
 #currencyChange {
-    max-width: 75px;
+    min-width: 20ch;
+    min-height: 35px;
+    text-align: center!important;
+    border-radius: 10px;
+    
+}
+.text-centrado{
+    width: 100%;
+    text-align: center;
+
 }
 
 .divPricings {
